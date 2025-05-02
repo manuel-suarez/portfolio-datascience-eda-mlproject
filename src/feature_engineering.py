@@ -10,10 +10,10 @@ def select_features(df):
     selected_columns = [
         "price",
         "room_type",
-        "neighbourhood",
+        "neighbourhood_cleansed",
         "availability_365",
         "number_of_reviews",
-        "reviews_per_month",
+        "review_scores_rating",
         "minimum_nights",
         "latitude",
         "longitude",
@@ -23,17 +23,17 @@ def select_features(df):
 
 def engineer_features(df):
     # Handle missing values
-    # df = df.dropna(subset=["review_scores_rating"])
+    df = df.dropna(subset=["review_scores_rating"])
 
     # One-hot encode categorial features
-    categorical_cols = ["room_type", "neighbourhood"]
+    categorical_cols = ["room_type", "neighbourhood_cleansed"]
     df_encoded = pd.get_dummies(df, columns=categorical_cols, drop_first=True)
 
     # Standardize numerical features (excluding target and coordinates)
     numeric_cols = [
         "availability_365",
         "number_of_reviews",
-        # "review_scores_rating",
+        "review_scores_rating",
         "minimum_nights",
     ]
 
