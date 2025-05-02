@@ -41,6 +41,8 @@ pip install -r requirements.txt
 
 # Run preprocessing
 python src/data_preprocessing.py
+# Run feature engineering
+python src/feature_engineering.py
 
 📈 Outputs
 
