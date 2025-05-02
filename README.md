@@ -1,43 +1,53 @@
-# 🧠 EDA & Machine Learning Project: [Dataset Name]
+# 🏡 Airbnb Listings – EDA & Price Prediction
 
-## 📖 Description
+## 📖 Project Overview
 
-This project explores and models [dataset/topic] using a complete data science pipeline:
-- Data Cleaning
+This project performs end-to-end data analysis and modeling on Airbnb listings data.  
+It focuses on predicting listing price and availability using attributes like location, room type, number of reviews, and more.
+
+Main steps:
+- Data Cleaning & Preprocessing
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
-- Predictive Modeling (classification/regression)
-- Model Evaluation and Visualization
+- Regression Modeling
+- Model Evaluation & Visualization
 
-## 🔍 Dataset
+## 📊 Dataset
 
-- Source: [link]
-- Size: X rows, Y columns
-- Target variable: `target_name`
+- Source: [Inside Airbnb](http://insideairbnb.com/get-the-data.html)
+- File: `listings.csv` (from [your chosen city])
+- Size: ~10k–50k rows
+- Target variable: `price`
 
-## 🛠️ Tech Stack
+## 🛠️ Tools & Stack
 
-- Python, pandas, numpy, scikit-learn
-- matplotlib, seaborn, plotly
-- Jupyter Notebook
-- (Optional) Streamlit/Dash
+- `pandas`, `numpy`
+- `matplotlib`, `seaborn`, `plotly`
+- `scikit-learn`
+- `jupyter`, `streamlit` (optional)
 
 ## 📂 Project Structure
 
-See `/src/`, `/notebooks/`, and `/outputs/` for code, analysis, and results.
+- `/data/`: raw and cleaned data
+- `/notebooks/`: EDA and analysis
+- `/src/`: reusable Python scripts
+- `/outputs/`: model metrics and plots
 
-## 🧪 Results
-
-- Best model: Random Forest (F1-score: 0.88)
-- Feature importance: Feature A, Feature B, ...
-
-## 📈 Visuals
-
-![Sample Chart](./screenshots/eda-plot.png)
-
-## 🚀 How to Run
+## 🚀 Run Instructions
 
 ```bash
+# Install dependencies
 pip install -r requirements.txt
-python src/train_model.py
 
+# Run preprocessing
+python src/data_preprocessing.py
+
+📈 Outputs
+
+* Correlation matrix
+* Feature importances
+* Price prediction metrics (RMSE, MAE, R²)
+
+📄 License
+
+MIT License. Dataset © Inside Airbnb (public use).
