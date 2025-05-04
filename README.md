@@ -1,4 +1,4 @@
-# 🏡 Airbnb Listings – EDA & Price Prediction
+# 🏡 Airbnb Listings – EDA & Price Prediction (TO BE FINISHED)
 
 ## 📖 Project Overview
 
@@ -15,8 +15,8 @@ Main steps:
 ## 📊 Dataset
 
 - Source: [Inside Airbnb](http://insideairbnb.com/get-the-data.html)
-- File: `listings.csv` (from [your chosen city])
-- Size: ~10k–50k rows
+- File: `listings.csv` (from CDMX, México)
+- Size: ~50k (48,544) rows
 - Target variable: `price`
 
 ## 🛠️ Tools & Stack
